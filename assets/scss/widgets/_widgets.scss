@@ -1,2 +1,18 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.widget {
+	margin: 0 0 $gap-sm;
+	padding: $gap-sm;
+	border-radius: 7px;
+	background: rgba(0, 0, 0, 0.5);
+
+	h3 {
+		margin-top: 5px;
+		padding-bottom: 10px;
+		letter-spacing: 1.5px;
+		border-bottom: 1px solid #333333;
+		font-family: "Lora", serif;
+		font-weight: 300;
+	}
+}

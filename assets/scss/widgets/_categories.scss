@@ -1,2 +1,16 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.widget-categories {
+	&__list {
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item a {
+		display: block;
+		padding: 5px 0;
+		transition: padding-left 0.5s;
+		border-radius: 4px;
+	}
+}

@@ -1,2 +1,30 @@
 @use "../presets" as *;
 @use "../mixins" as *;
+
+.header-menu {
+	background: rgba(0, 0, 0, 0.3);
+
+	
+
+	&__list {
+		display: flex;
+		justify-content: center;
+		margin: 0;
+		padding: 0;
+
+		&-item {
+			a {
+				display: block;
+				margin: 5px;
+				padding: 12px 15px;
+				border-radius: 4px;
+			}
+		}
+	}
+}
+
+.header-menu__list-item.active a {
+	color: #bb1a1a;
+	background: rgba(0, 0, 0, 0.4);
+	text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+}
