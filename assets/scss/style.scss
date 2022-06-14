@@ -1,12 +1,7 @@
 @use "../../libs/normalize.css/normalize" as *;
 
-@use "variables" as *;
-@use "skin" as *;
-@use "mixins-media" as *;
-@use "mixins" as *;
-@use "extends.scss" as *;
-
-@use "common" as *;
+@use "common/classes" as *;
+@use "common/typography" as *;
 
 @use "header/header" as *;
 @use "header/header-logo" as *;

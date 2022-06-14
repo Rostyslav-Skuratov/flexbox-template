@@ -1,0 +1,23 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-style: $font-main;
+	font-size: $font-size;
+}
+
+.bg-img {
+	background-image: url("../img/global-bg.jpg");
+	position: absolute;
+	top: 0;
+	right: 0;
+	min-height: 100vh;
+	min-width: 100%;
+	z-index: -1;
+}

@@ -9,7 +9,13 @@ $sm: 768px;
 $xs: 576px;
 $xx: 480px;
 
-$gap: 30px;
+$gap: 20px;
+$gap-sm: $gap * 0.5;
+$gap-lg: $gap * 1.5;
+$gap-x2: $gap * 2;
+$gap-x3: $gap * 3;
+$gap-x4: $gap * 4;
+$gap-x5: $gap * 5;
 
 $left-sidebar-width: 220px;
 $right-sidebar-width: 240px;

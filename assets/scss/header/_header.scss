@@ -1,18 +1,14 @@
+@use "../presets" as *;
 @use "../mixins" as *;
-@use "../variables" as *;
 
 .header {
-	&__container {}
+	overflow: hidden;
+	min-height: 100px;
+	margin-bottom: 30px;
+	border-radius: 0 0 7px 7px;
 
-	&__logo {}
-
-	&__content {}
-}
-
-.header-menu {
-	&__list {}
-
-	&__list-item {
-
+	&__container {
+		@extend %container;
+		background: rgba(0, 0, 0, 0.5);
 	}
 }
