@@ -3,4 +3,5 @@ temp/
 
 # IntellijIdea files
 .idea/
+.vscode/
 */scss-comb/

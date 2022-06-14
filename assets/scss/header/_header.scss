@@ -1,0 +1,18 @@
+@use "../mixins" as *;
+@use "../variables" as *;
+
+.header {
+	&__container {}
+
+	&__logo {}
+
+	&__content {}
+}
+
+.header-menu {
+	&__list {}
+
+	&__list-item {
+
+	}
+}

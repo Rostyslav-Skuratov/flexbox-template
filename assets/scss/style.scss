@@ -1,26 +1,27 @@
-@import "../../libs/normalize.css/normalize";
+@use "../../libs/normalize.css/normalize" as *;
 
-@import "variables";
-@import "skin";
-@import "mixins-media";
-@import "mixins";
+@use "variables" as *;
+@use "skin" as *;
+@use "mixins-media" as *;
+@use "mixins" as *;
+@use "extends.scss" as *;
 
-@import "common";
+@use "common" as *;
 
-@import "header/header";
-@import "header/header-logo";
-@import "header/header-menu";
+@use "header/header" as *;
+@use "header/header-logo" as *;
+@use "header/header-menu" as *;
 
-@import "main/main";
-@import "main/main-breadcrumb";
-@import "main/main-content";
-@import "main/main-content-item";
+@use "main/main" as *;
+@use "main/main-breadcrumb" as *;
+@use "main/main-content" as *;
+@use "main/main-content-item" as *;
 
-@import "aside/left";
-@import "aside/right";
+@use "aside/left" as *;
+@use "aside/right" as *;
 
-@import "widgets/widgets";
-@import "widgets/search";
-@import "widgets/categories";
-@import "widgets/news";
-@import "footer";
+@use "widgets/widgets" as *;
+@use "widgets/search" as *;
+@use "widgets/categories" as *;
+@use "widgets/news" as *;
+@use "footer" as *;
