@@ -7,7 +7,7 @@
 	align-items: center;
 
 	@include sm-min {
-	padding: $gap-lg $gap-sm 46px $gap-sm;
+	padding: $gap-lg $gap-sm;
 	}
 
 	@include sm {
@@ -22,12 +22,12 @@
 			margin-bottom: $gap;
 		}
 		
-		@include sm-xs {
+		@include sm-xx {
 			max-width: 300px;
 			margin-bottom: $gap-sm;
 		}
 
-		@include xs {
+		@include xx {
 			width: 80%;
 			margin-bottom: $gap-sm;
 		}
@@ -36,8 +36,7 @@
 	&__title {
 		display: block;
 		text-align: center;
-		margin-bottom: 17px;
-		text-align: center;
+		margin-bottom: $gap-sm;
 		letter-spacing: 5px;
 		font-family: $font-header;
 		font-weight: 300;

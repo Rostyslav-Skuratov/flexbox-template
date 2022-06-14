@@ -9,4 +9,24 @@
 	letter-spacing: 2px;
 	border-radius: 7px;
 	background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+
+	&__span {
+		@extend %link;
+		margin-right: 7px;
+	}
+
+	&__link {
+		@extend %link;
+		@extend %margin;
+	}
+
+		
+	a {
+		font-weight: bold;
+	}
+
+	i {
+		color: #cccccc;
+		font-weight: bold;
+	}
 }
