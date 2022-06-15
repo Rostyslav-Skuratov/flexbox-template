@@ -8,6 +8,11 @@
 			flex-wrap: wrap;
 			margin: 0 -15px 7.5px;
 			padding: 0 15px 7.5px;
+			
+			&:hover {
+				background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 100%);
+				color: $color-accent;
+			}
 		}
 
 		&-title {
@@ -20,6 +25,8 @@
 			letter-spacing: 1px;
 			text-overflow: ellipsis;
 			font-weight: 300;
+
+			
 		}
 
 		&-image {
@@ -27,6 +34,10 @@
 			width: 75px;
 			height: 75px;
 			border-radius: 4px;
+			
+			img {
+				transition: transform 0.5s;
+			}
 		}
 
 		&-excerpt {
@@ -39,6 +50,16 @@
 			color: #cccccc;
 			font-size: 13px;
 			line-height: 19px;
+		}
+
+		a {
+			&:hover h4 {
+				@include text-shadow;
+			}
+
+			&:hover img {
+				transform: scale(1.2);
+			}
 		}
 	}
 }

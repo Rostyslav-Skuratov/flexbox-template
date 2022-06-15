@@ -20,7 +20,7 @@ body {
 	margin: 0 auto;
 	transition: opacity 1s ease 0s;
 	opacity: 1;
-	background-color: #d8b036;
+	background-color: $color-warning;
 	background-image: url(../img/global-bg.jpg);
 	background-attachment: fixed;
 	background-position: top center;
@@ -39,6 +39,10 @@ a {
 	font-family: inherit;
 	color: $color-light;
 	text-decoration: none;
+
+	&:hover {
+		color: $color-accent-dark;
+	}
 }
 
 ul {

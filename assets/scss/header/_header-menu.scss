@@ -2,15 +2,61 @@
 @use "../mixins" as *;
 
 .header-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background: rgba(0, 0, 0, 0.3);
-
 	
+	@include sm {
+		flex-direction: column;
+	}
+
+	&__btn {
+		align-items: center;
+		flex-direction: column;
+		justify-content: center;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		background: rgba(0, 0, 0, 0.2);
+
+		@include sm-min {
+			display: none;
+		}
+
+		@include sm {
+			display: flex;
+		}
+
+		&-row {
+			position: relative;
+			width: 60%;
+			height: 2px;
+			margin: 2px 0;
+			transition: 0.5s;
+			background-color: $color-light;
+		}
+	}
 
 	&__list {
-		display: flex;
 		justify-content: center;
 		margin: 0;
 		padding: 0;
+
+		@include sm-min {
+			display: flex;
+		}
+
+		@include sm {
+			display: none;
+			width: 100%;
+			text-align: center;
+		}
+
+		&.active {
+			display: flex;
+			flex-direction: column;
+		}
 
 		&-item {
 			a {
@@ -18,13 +64,32 @@
 				margin: 5px;
 				padding: 10px $gap-sm;
 				border-radius: 4px;
+
+				@include sm {
+					margin-top: 0;
+					margin-bottom: 0;
+				}
+
+				&:hover {
+					color: $color-accent;
+					background: rgba(0, 0, 0, 0.3);
+					@include text-shadow;
+				}
+			}
+
+			&.active a {
+				color: $color-accent-dark;
+				background: rgba(0, 0, 0, 0.4);
+				@include text-shadow;
+			}
+
+			&:last-child {
+				@include sm {
+					margin-bottom: 5px;
+				}
 			}
 		}
 	}
 }
 
-.header-menu__list-item.active a {
-	color: #bb1a1a;
-	background: rgba(0, 0, 0, 0.4);
-	text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
-}
+

@@ -9,6 +9,6 @@
 
 	&__container {
 		@extend %container;
-		background: rgba(0, 0, 0, 0.5);
+		@include bg-color;
 	}
 }

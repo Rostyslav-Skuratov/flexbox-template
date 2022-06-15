@@ -23,6 +23,10 @@
 		
 	a {
 		font-weight: bold;
+
+		&:hover {
+			color: $color-accent-dark;
+		}
 	}
 
 	i {

@@ -38,8 +38,8 @@
 		white-space: nowrap;
 		letter-spacing: 1px;
 		text-overflow: ellipsis;
-		background-color: rgba(0, 0, 0, 0.5);
-		text-shadow: 1px 1px 3px #000000, 1px 1px 10px #000000;
+		@include bg-color;
+		@include text-shadow;
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 1em;
@@ -53,5 +53,20 @@
 		height: calc(100% - 27px);
 		margin: 0;
 		padding: $gap-sm;
+		transition: top 0.5s ease-out, background-color 0.5s ease-out;
+		text-align: center;
+	}
+
+	&:hover .main-content-item__excerpt {
+		top: $gap;
+		color: $color-light;
+		background: rgba(0, 0, 0, 0.75);
+	}
+
+	&:hover h3 {
+		color: $color-accent;
+		background: rgba(0, 0, 0, 0.75);
 	}
 }
+
+
